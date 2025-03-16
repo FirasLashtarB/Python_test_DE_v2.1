@@ -28,12 +28,13 @@
    python -m src.data_cleaner
    python -m src.data_processor
    python -m src.output_generator
-- Vérifiez que `output.json` contient bien les relations attendues.
+
 
 ---
 Question 4: 
 ## ad-hoc (`adhoc.py`)
-Le fichier `adhoc.py` permet d'effectuer des analyses supplémentaires sur les données traitées. Deux fonctionnalités principales sont disponibles :
+Le fichier `adhoc.py` permet d'effectuer des analyses supplémentaires sur les données traitées. 
+Deux fonctionnalités principales sont disponibles :
 
 **Trouver le journal qui mentionne le plus de médicaments différents**
 python src/adhoc.py

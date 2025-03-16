@@ -13,7 +13,6 @@ def most_referenced_journal(data):
     journal_counts = defaultdict(set)
     for entry in data:
         journal_counts[entry["journal"].lower()].add(entry["drug"].lower())
-
     max_journal = max(journal_counts, key=lambda k: len(journal_counts[k]))
     return max_journal, len(journal_counts[max_journal])
 
@@ -38,8 +37,8 @@ def related_meds_for_drug(data, drug_name):
 if __name__ == "__main__":
     data = load_output()
     top_journal, count = most_referenced_journal(data)
-    print(f"📌 Journal qui mentionne le plus de médicaments : {top_journal} ({count} médicaments différents)")
+    print(f"Journal qui mentionne le plus de médicaments : {top_journal} ({count} médicaments différents)")
 
     test_drug = "Diphenhydramine"
     related_meds = related_meds_for_drug(data, test_drug)
-    print(f"📌 Médicaments mentionnés avec {test_drug} dans PubMed : {related_meds}")
+    print(f"Médicaments mentionnés avec {test_drug} dans PubMed : {related_meds}")
