@@ -1,5 +1,5 @@
 # Data Pipeline Project
-
+**_I) Python et Data Engineering**_
 ##  Installation
 1. **Cloner le projet ou télécharger l’archive ZIP**
    git clone https://github.com/ton-utilisateur/ton-repo.git
@@ -52,3 +52,6 @@ Renvoie la liste des médicaments mentionnés dans les mêmes journaux que le m�
 -  Modifications à apporter pour gérer de grosses volumétries de données (To/millions de fichiers): 
     * Lecture par batch avec chunksize pour éviter la surcharge mémoire.
     * Utilisation de Spark (PySpark) ou Dask pour un traitement distribué.
+   
+_**II) SQL**_
+La partie 2, vous allez trouver le dossier sql qui contient 2 scripts sql, chaue script correspond à une question.
